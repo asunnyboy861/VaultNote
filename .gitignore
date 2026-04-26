@@ -37,3 +37,4 @@ Pods/
 # VaultNote specific - allow project documentation
 VaultNote/*.md
 !VaultNote/PROJECT_SUMMARY.md
+!VaultNote/nowgit.md
