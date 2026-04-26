@@ -34,6 +34,6 @@ Pods/
 *~
 .idea/
 
-# VaultNote specific
-*.md
-!VaultNote/VaultNote/Assets.xcassets/AppIcon.appiconset/Contents.json
+# VaultNote specific - allow project documentation
+VaultNote/*.md
+!VaultNote/PROJECT_SUMMARY.md
