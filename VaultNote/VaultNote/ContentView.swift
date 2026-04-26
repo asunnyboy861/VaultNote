@@ -13,6 +13,11 @@ struct ContentView: View {
             }
         }
         .animation(.easeInOut(duration: 0.3), value: authManager.isUnlocked)
+        .task {
+            #if targetEnvironment(simulator)
+            authManager.isUnlocked = true
+            #endif
+        }
     }
     
     var mainContent: some View {

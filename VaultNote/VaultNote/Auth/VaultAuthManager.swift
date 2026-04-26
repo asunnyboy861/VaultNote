@@ -15,6 +15,10 @@ final class VaultAuthManager: ObservableObject {
     }
     
     func authenticate(reason: String = "Unlock VaultNote") async -> Bool {
+        #if targetEnvironment(simulator)
+        await MainActor.run { self.isUnlocked = true }
+        return true
+        #else
         let context = LAContext()
         var error: NSError?
         
@@ -32,6 +36,7 @@ final class VaultAuthManager: ObservableObject {
         } catch {
             return await authenticateWithPasscode()
         }
+        #endif
     }
     
     private func authenticateWithPasscode() async -> Bool {
