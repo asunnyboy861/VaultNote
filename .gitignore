@@ -38,3 +38,16 @@ Pods/
 VaultNote/*.md
 !VaultNote/PROJECT_SUMMARY.md
 !VaultNote/nowgit.md
+# Internal factory docs (not for public repo)
+VaultNote/PROJECT_SUMMARY.md
+VaultNote/nowgit.md
+keytext*.md
+*_inventory.md
+us.md
+price.md
+icon.md
+capabilities.md
+改进计划*.MD
+改进计划*.md
+*操作指南*.md
+*操作指南*.MD

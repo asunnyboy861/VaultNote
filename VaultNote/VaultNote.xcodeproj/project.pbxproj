@@ -6,6 +6,13 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		6A9154AE2FA2484900F47542 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A9154AD2FA2484900F47542 /* WidgetKit.framework */; };
+		6A9154B02FA2484900F47542 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A9154AF2FA2484900F47542 /* SwiftUI.framework */; };
+		6A9154C12FA2484A00F47542 /* VaultNoteWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 6A9154AB2FA2484900F47542 /* VaultNoteWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		6A9154D82FA2539600F47542 /* VaultNoteShare.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 6A9154CE2FA2539600F47542 /* VaultNoteShare.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		6A706EC92F9DD010006956A0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -21,17 +28,78 @@
 			remoteGlobalIDString = 6A706EBA2F9DD00F006956A0;
 			remoteInfo = VaultNote;
 		};
+		6A9154BF2FA2484A00F47542 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6A706EB32F9DD00F006956A0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6A9154AA2FA2484900F47542;
+			remoteInfo = VaultNoteWidgetExtension;
+		};
+		6A9154D62FA2539600F47542 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6A706EB32F9DD00F006956A0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6A9154CD2FA2539600F47542;
+			remoteInfo = VaultNoteShare;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		6A9154C62FA2484A00F47542 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				6A9154C12FA2484A00F47542 /* VaultNoteWidgetExtension.appex in Embed Foundation Extensions */,
+				6A9154D82FA2539600F47542 /* VaultNoteShare.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		6A706EBB2F9DD00F006956A0 /* VaultNote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VaultNote.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A706EC82F9DD010006956A0 /* VaultNoteTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VaultNoteTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A706ED22F9DD010006956A0 /* VaultNoteUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VaultNoteUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A9154AB2FA2484900F47542 /* VaultNoteWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = VaultNoteWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A9154AD2FA2484900F47542 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		6A9154AF2FA2484900F47542 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		6A9154C72FA2485F00F47542 /* VaultNoteWidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = VaultNoteWidgetExtension.entitlements; sourceTree = "<group>"; };
+		6A9154CE2FA2539600F47542 /* VaultNoteShare.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = VaultNoteShare.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		6A9154C22FA2484A00F47542 /* Exceptions for "VaultNoteWidget" folder in "VaultNoteWidgetExtension" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 6A9154AA2FA2484900F47542 /* VaultNoteWidgetExtension */;
+		};
+		6A9154D92FA2539600F47542 /* Exceptions for "VaultNoteShare" folder in "VaultNoteShare" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 6A9154CD2FA2539600F47542 /* VaultNoteShare */;
+		};
+		6A9157D02FA2D8F300F47542 /* Exceptions for "VaultNote" folder in "VaultNote" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 6A706EBA2F9DD00F006956A0 /* VaultNote */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		6A706EBD2F9DD00F006956A0 /* VaultNote */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				6A9157D02FA2D8F300F47542 /* Exceptions for "VaultNote" folder in "VaultNote" target */,
+			);
 			path = VaultNote;
 			sourceTree = "<group>";
 		};
@@ -43,6 +111,22 @@
 		6A706ED52F9DD010006956A0 /* VaultNoteUITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = VaultNoteUITests;
+			sourceTree = "<group>";
+		};
+		6A9154B12FA2484900F47542 /* VaultNoteWidget */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				6A9154C22FA2484A00F47542 /* Exceptions for "VaultNoteWidget" folder in "VaultNoteWidgetExtension" target */,
+			);
+			path = VaultNoteWidget;
+			sourceTree = "<group>";
+		};
+		6A9154CF2FA2539600F47542 /* VaultNoteShare */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				6A9154D92FA2539600F47542 /* Exceptions for "VaultNoteShare" folder in "VaultNoteShare" target */,
+			);
+			path = VaultNoteShare;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -69,15 +153,35 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		6A9154A82FA2484900F47542 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A9154B02FA2484900F47542 /* SwiftUI.framework in Frameworks */,
+				6A9154AE2FA2484900F47542 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6A9154CB2FA2539600F47542 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		6A706EB22F9DD00F006956A0 = {
 			isa = PBXGroup;
 			children = (
+				6A9154C72FA2485F00F47542 /* VaultNoteWidgetExtension.entitlements */,
 				6A706EBD2F9DD00F006956A0 /* VaultNote */,
 				6A706ECB2F9DD010006956A0 /* VaultNoteTests */,
 				6A706ED52F9DD010006956A0 /* VaultNoteUITests */,
+				6A9154B12FA2484900F47542 /* VaultNoteWidget */,
+				6A9154CF2FA2539600F47542 /* VaultNoteShare */,
+				6A9154AC2FA2484900F47542 /* Frameworks */,
 				6A706EBC2F9DD00F006956A0 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -88,8 +192,19 @@
 				6A706EBB2F9DD00F006956A0 /* VaultNote.app */,
 				6A706EC82F9DD010006956A0 /* VaultNoteTests.xctest */,
 				6A706ED22F9DD010006956A0 /* VaultNoteUITests.xctest */,
+				6A9154AB2FA2484900F47542 /* VaultNoteWidgetExtension.appex */,
+				6A9154CE2FA2539600F47542 /* VaultNoteShare.appex */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		6A9154AC2FA2484900F47542 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6A9154AD2FA2484900F47542 /* WidgetKit.framework */,
+				6A9154AF2FA2484900F47542 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -102,10 +217,13 @@
 				6A706EB72F9DD00F006956A0 /* Sources */,
 				6A706EB82F9DD00F006956A0 /* Frameworks */,
 				6A706EB92F9DD00F006956A0 /* Resources */,
+				6A9154C62FA2484A00F47542 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				6A9154C02FA2484A00F47542 /* PBXTargetDependency */,
+				6A9154D72FA2539600F47542 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				6A706EBD2F9DD00F006956A0 /* VaultNote */,
@@ -163,6 +281,50 @@
 			productReference = 6A706ED22F9DD010006956A0 /* VaultNoteUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		6A9154AA2FA2484900F47542 /* VaultNoteWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6A9154C32FA2484A00F47542 /* Build configuration list for PBXNativeTarget "VaultNoteWidgetExtension" */;
+			buildPhases = (
+				6A9154A72FA2484900F47542 /* Sources */,
+				6A9154A82FA2484900F47542 /* Frameworks */,
+				6A9154A92FA2484900F47542 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				6A9154B12FA2484900F47542 /* VaultNoteWidget */,
+			);
+			name = VaultNoteWidgetExtension;
+			packageProductDependencies = (
+			);
+			productName = VaultNoteWidgetExtension;
+			productReference = 6A9154AB2FA2484900F47542 /* VaultNoteWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		6A9154CD2FA2539600F47542 /* VaultNoteShare */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6A9154DA2FA2539600F47542 /* Build configuration list for PBXNativeTarget "VaultNoteShare" */;
+			buildPhases = (
+				6A9154CA2FA2539600F47542 /* Sources */,
+				6A9154CB2FA2539600F47542 /* Frameworks */,
+				6A9154CC2FA2539600F47542 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				6A9154CF2FA2539600F47542 /* VaultNoteShare */,
+			);
+			name = VaultNoteShare;
+			packageProductDependencies = (
+			);
+			productName = VaultNoteShare;
+			productReference = 6A9154CE2FA2539600F47542 /* VaultNoteShare.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -170,7 +332,7 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1630;
+				LastSwiftUpdateCheck = 2640;
 				LastUpgradeCheck = 1630;
 				TargetAttributes = {
 					6A706EBA2F9DD00F006956A0 = {
@@ -183,6 +345,12 @@
 					6A706ED12F9DD010006956A0 = {
 						CreatedOnToolsVersion = 16.3;
 						TestTargetID = 6A706EBA2F9DD00F006956A0;
+					};
+					6A9154AA2FA2484900F47542 = {
+						CreatedOnToolsVersion = 26.4.1;
+					};
+					6A9154CD2FA2539600F47542 = {
+						CreatedOnToolsVersion = 26.4.1;
 					};
 				};
 			};
@@ -203,6 +371,8 @@
 				6A706EBA2F9DD00F006956A0 /* VaultNote */,
 				6A706EC72F9DD010006956A0 /* VaultNoteTests */,
 				6A706ED12F9DD010006956A0 /* VaultNoteUITests */,
+				6A9154AA2FA2484900F47542 /* VaultNoteWidgetExtension */,
+				6A9154CD2FA2539600F47542 /* VaultNoteShare */,
 			);
 		};
 /* End PBXProject section */
@@ -223,6 +393,20 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		6A706ED02F9DD010006956A0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6A9154A92FA2484900F47542 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6A9154CC2FA2539600F47542 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -253,6 +437,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		6A9154A72FA2484900F47542 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6A9154CA2FA2539600F47542 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -265,6 +463,16 @@
 			isa = PBXTargetDependency;
 			target = 6A706EBA2F9DD00F006956A0 /* VaultNote */;
 			targetProxy = 6A706ED32F9DD010006956A0 /* PBXContainerItemProxy */;
+		};
+		6A9154C02FA2484A00F47542 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6A9154AA2FA2484900F47542 /* VaultNoteWidgetExtension */;
+			targetProxy = 6A9154BF2FA2484A00F47542 /* PBXContainerItemProxy */;
+		};
+		6A9154D72FA2539600F47542 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6A9154CD2FA2539600F47542 /* VaultNoteShare */;
+			targetProxy = 6A9154D62FA2539600F47542 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -324,6 +532,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -382,6 +591,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -395,14 +605,19 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = VaultNote/VaultNote.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = JP4TN5PTS3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = VaultNote/Info.plist;
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "VaultNote uses Face ID to protect your encrypted notes";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "VaultNote uses your location to unlock geo-fenced notes when you're in the designated area.";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "VaultNote needs microphone access to record encrypted voice memos.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "VaultNote needs photo library access to import and encrypt your photos.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_NSFaceIDUsageDescription = "VaultNote uses Face ID to protect your encrypted notes";
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -411,7 +626,6 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.zzoutuo.VaultNote;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -425,12 +639,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = VaultNote/VaultNote.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = JP4TN5PTS3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = VaultNote/Info.plist;
 				INFOPLIST_KEY_NSFaceIDUsageDescription = "VaultNote uses Face ID to protect your encrypted notes";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "VaultNote uses your location to unlock geo-fenced notes when you're in the designated area.";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "VaultNote needs microphone access to record encrypted voice memos.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "VaultNote needs photo library access to import and encrypt your photos.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -441,7 +660,6 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.zzoutuo.VaultNote;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -459,7 +677,6 @@
 				DEVELOPMENT_TEAM = JP4TN5PTS3;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
-				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.zzoutuo.VaultNote.VaultNoteTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
@@ -478,7 +695,6 @@
 				DEVELOPMENT_TEAM = JP4TN5PTS3;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
-				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.zzoutuo.VaultNote.VaultNoteTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
@@ -495,7 +711,6 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = JP4TN5PTS3;
 				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.zzoutuo.VaultNote.VaultNoteUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
@@ -512,13 +727,130 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = JP4TN5PTS3;
 				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.zzoutuo.VaultNote.VaultNoteUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = VaultNote;
+			};
+			name = Release;
+		};
+		6A9154C42FA2484A00F47542 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = VaultNoteWidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JP4TN5PTS3;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = VaultNoteWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = VaultNoteWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 26.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.zzoutuo.VaultNote.VaultNoteWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6A9154C52FA2484A00F47542 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = VaultNoteWidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JP4TN5PTS3;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = VaultNoteWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = VaultNoteWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 26.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.zzoutuo.VaultNote.VaultNoteWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		6A9154DB2FA2539600F47542 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JP4TN5PTS3;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = VaultNoteShare/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = VaultNoteShare;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 26.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.zzoutuo.VaultNote.VaultNoteShare;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6A9154DC2FA2539600F47542 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JP4TN5PTS3;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = VaultNoteShare/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = VaultNoteShare;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 26.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.zzoutuo.VaultNote.VaultNoteShare;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -557,6 +889,24 @@
 			buildConfigurations = (
 				6A706EE32F9DD010006956A0 /* Debug */,
 				6A706EE42F9DD010006956A0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6A9154C32FA2484A00F47542 /* Build configuration list for PBXNativeTarget "VaultNoteWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6A9154C42FA2484A00F47542 /* Debug */,
+				6A9154C52FA2484A00F47542 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6A9154DA2FA2539600F47542 /* Build configuration list for PBXNativeTarget "VaultNoteShare" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6A9154DB2FA2539600F47542 /* Debug */,
+				6A9154DC2FA2539600F47542 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

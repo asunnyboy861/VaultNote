@@ -25,6 +25,16 @@ final class VaultCrypto {
         let decryptedData = try AES.GCM.open(sealedBox, using: key)
         return String(data: decryptedData, encoding: .utf8)!
     }
+
+    static func encryptData(_ data: Data, with key: SymmetricKey) throws -> Data {
+        let sealedBox = try AES.GCM.seal(data, using: key)
+        return sealedBox.combined!
+    }
+
+    static func decryptData(_ encryptedData: Data, with key: SymmetricKey) throws -> Data {
+        let sealedBox = try AES.GCM.SealedBox(combined: encryptedData)
+        return try AES.GCM.open(sealedBox, using: key)
+    }
     
     static func generateSalt() -> Data {
         var salt = Data(count: 16)
