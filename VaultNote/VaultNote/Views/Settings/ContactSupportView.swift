@@ -80,7 +80,7 @@ struct ContactSupportView: View {
             "name": name,
             "email": email,
             "message": message,
-            "app": "VaultNote",
+            "app": "SealNotes",
             "version": Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String ?? "1.0"
         ] as [String: String]
         
